@@ -1,10 +1,10 @@
 !DOCTYPE html>
 <html lang="en">
 <head>
-    <title>W3.CSS Template</title>
+    <title>BOMNET - OMNeT++ BIM-based Plug-In</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="website_assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,39 +36,35 @@
     </div>
 </div>
 
-<header class="w3-container w3-grey w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">BOMNET</h1>
-    <p class="w3-xlarge">An OMNeT++ Open-Source BIM-based Plug-In for Automatic Environment Generation</p>
-    <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Github repository</button>
+<header class="w3-container w3-grey w3-center" style="padding:64px 16px;">
+    <img src="website_assets/logo.gif" alt="Logo animation" style="width: 50%; margin-right: 50px;">
+    <p class="w3-xlarge w3-text-white">An OMNeT++ Open-Source BIM-based Plug-In for Automatic Environment Generation</p>
+    <a href="https://github.com/bomnet/bomnet.github.io"><button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Github repository</button></a>
 </header>
 
 <div class="w3-row-padding w3-padding-64 w3-container" id="pres">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>Presentation</h1>
-            <h5 class="w3-padding-32">Exploit your Digital Twin to create realistic Wireless Network Simulation. BOMNET is an free open-source plug-in designed for OMNeT++ and iNet, leveraging the power of Building Information Modeling (BIM) data. By integrating IFC (Industry Foundation Classes) files, BOMNET automatically generates the 3D environments with related material properties. Download and install BOMNET for more accurate analysis of wireless networks.</h5>
+    <h1>Presentation</h1>
+        <div class="w3-half">
+            <h5 class="w3-padding-32">Exploit your Digital Twin to create realistic Wireless Network Simulation. BOMNET is a free open-source plug-in designed for OMNeT++ and INET, leveraging the power of Building Information Modeling (BIM) data. By integrating IFC (Industry Foundation Classes) files, BOMNET automatically generates the 3D environments with related material properties. Download and install BOMNET for more accurate analysis of wireless networks.</h5>
             <p class="w3-text-grey">BOMNET takes IFC files as input and generates two files for environment configuration: <code>omnet.ini</code> and <code>environment.xml</code>. The first one contains the global configuration of the simulation while the second comprises all 3D objects of the BIM with its associated material. If the materials are absent of the Digital Twin, BOMNET uses the structure to suppose the materials. </p>
-            <p class="w3-text-grey">BOMNET writes over files from iNet for environment generation but does not impact classic utilization.</p>
+            <p class="w3-text-grey">BOMNET directly modifies from INET for environment generation but does not impact normal utilization.</p>
         </div>
-        <div class="w3-third w3-center">
-            <i class="fa fa-building w3-padding-64 w3-text-orange"></i>
+        <div class="w3-half w3-center">
+            <img src="website_assets/BOMNET_screenshot.png"  alt="BOMNET screenshot" style="width: -webkit-fill-available;">
         </div>
-    </div>
 </div>
 
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="proj">
     <div class="w3-content">
         <div class="w3-third w3-center">
-            <i class="fa fa-graduation-cap w3-padding-64 w3-text-orange w3-margin-right"></i>
+            <img src="website_assets/UnivGustaveEiffel.png "  alt="Logo of University Gustave Eiffel France" style="width: -webkit-fill-available;margin-right: 50px;margin-top: 75px;">
         </div>
 
         <div class="w3-twothird">
             <h1>Project</h1>
             <h5 class="w3-padding-32">BOMNET is an academic project that we encourage to contribute to improve its versatility.</h5>
-
-            <p class="w3-text-grey">Supervised by <b>Professor Abderrezak Rachedi</b>, PhD canditates <b>Aurélien Chambon</b> and <b>Clément Dutriez</b> with the help of Master degree students <b>Abderrahmane Melek</b>, <b>Khalifa Serraye</b>, <b>Mohammed Menacer</b> and <b>Louis Thidet</b>, created BOMNET in 2024 as a M2SSIO project in Université Gustave Eiffel, France.</p>
-
-            <p class="w3-text-grey">The project is available on GitHub for download, installation and contribution.</p>
+            <p class="w3-text-grey">Supervised by <a href="https://igm.univ-mlv.fr/~rachedi/">Professor Abderrezak Rachedi</a>, PhD canditates <a href="https://aurelienchambon.pythonanywhere.com/">Aurélien Chambon</a> and Clément Dutriez with the help of Master degree students Abderrahmane Melek, Khalifa Serraye, Mohammed Menacer and Louis Thidet, created BOMNET in 2024 as a M2-SSIO project in <b>Université Gustave Eiffel</b>, France.</p>
+            <p class="w3-text-grey">The project is available on GitHub for download, installation and contribution under MIT License.</p>
             <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Documentation</button>
 
         </div>
@@ -97,8 +93,8 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-    <p>BOMNET - LIGM, Université Gustave Eiffel</p>
+<footer class="w3-container w3-center w3-opacity">
+    <p>BOMNET - LIGM Université Gustave Eiffel 5 Bd Descartes, 77420 Champs-sur-Marne FRANCE</p>
 </footer>
 
 <script>
