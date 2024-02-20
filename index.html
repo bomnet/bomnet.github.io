@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -19,7 +20,7 @@
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-orange w3-card w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-orange w3-large w3-orange" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
         <a href="#pres" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Presentation</a>
         <a href="#proj" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project</a>
@@ -29,15 +30,15 @@
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#pres" class="w3-bar-item w3-button w3-padding-large">Presentation</a>
-        <a href="#proj" class="w3-bar-item w3-button w3-padding-large">Project</a>
-        <a href="#down" class="w3-bar-item w3-button w3-padding-large">Download</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+        <a href="#pres" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Presentation</a>
+        <a href="#proj" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Project</a>
+        <a href="#down" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Download</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Contact</a>
     </div>
 </div>
 
 <header class="w3-container w3-grey w3-center" style="padding:64px 16px;">
-    <img src="website_assets/logo.gif" alt="Logo animation" style="width: 50%; margin-right: 50px;">
+    <img src="website_assets/logo.gif" id="logo" class="logo" alt="Logo animation">
     <p class="w3-xlarge w3-text-white">An OMNeT++ Open-Source BIM-based Plug-In for Automatic Environment Generation</p>
     <a href="https://github.com/bomnet/bomnet.github.io"><button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Github repository</button></a>
 </header>
@@ -57,7 +58,7 @@
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="proj">
     <div class="w3-content">
         <div class="w3-third w3-center">
-            <img src="website_assets/UnivGustaveEiffel.png "  alt="Logo of University Gustave Eiffel France" style="width: -webkit-fill-available;margin-right: 50px;margin-top: 75px;">
+            <img src="website_assets/UnivGustaveEiffel.png" class="univ_logo" alt="Logo of University Gustave Eiffel France">
         </div>
 
         <div class="w3-twothird">
@@ -93,7 +94,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-center w3-opacity">
+<footer class="w3-container w3-center w3-opacity" style="font-size: 12px">
     <p>BOMNET - LIGM Université Gustave Eiffel 5 Bd Descartes, 77420 Champs-sur-Marne FRANCE</p>
 </footer>
 
@@ -107,6 +108,18 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
+</script>
+<script>
+    $(function() {
+        $("#logo").hover(
+            function() {
+                $(this).attr("src", "website_assets/logoLoop.gif");
+            },
+            function() {
+                $(this).attr("src", "website_assets/logo.png");
+            }
+        );
+    });
 </script>
 
 </body>
