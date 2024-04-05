@@ -24,7 +24,7 @@
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
         <a href="#pres" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Presentation</a>
         <a href="#proj" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project</a>
-        <a href="#down" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+        <a href="#down" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download and usage</a>
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
     </div>
 
@@ -32,7 +32,7 @@
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
         <a href="#pres" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Presentation</a>
         <a href="#proj" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Project</a>
-        <a href="#down" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Download</a>
+        <a href="#down" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Download and usage</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-orange">Contact</a>
     </div>
 </div>
@@ -40,15 +40,16 @@
 <header class="w3-container w3-grey w3-center" style="padding:64px 16px;">
     <img src="website_assets/logo.gif" id="logo" class="logo" alt="Logo animation">
     <p class="w3-xlarge w3-text-white">An OMNeT++ Open-Source BIM-based Plug-In for Automatic Environment Generation</p>
-    <a href="https://github.com/bomnet/bomnet.github.io"><button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Github repository</button></a>
+    <a href="#down"><button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top w3-margin-right">Download</button></a>
+    <a href="https://github.com/bomnet/bomnet"><button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top w3-animate-left">Github repository</button></a>
 </header>
 
 <div class="w3-row-padding w3-padding-64 w3-container" id="pres">
     <h1>Presentation</h1>
         <div class="w3-half">
             <h5 class="w3-padding-32">Exploit your Digital Twin to create realistic Wireless Network Simulation. BOMNET is a free open-source plug-in designed for OMNeT++ and INET, leveraging the power of Building Information Modeling (BIM) data. By integrating IFC (Industry Foundation Classes) files, BOMNET automatically generates the 3D environments with related material properties. Download and install BOMNET for more accurate analysis of wireless networks.</h5>
-            <p class="w3-text-grey">BOMNET takes IFC files as input and generates two files for environment configuration: <code>omnet.ini</code> and <code>environment.xml</code>. The first one contains the global configuration of the simulation while the second comprises all 3D objects of the BIM with its associated material. If the materials are absent of the Digital Twin, BOMNET uses the structure to suppose the materials. </p>
-            <p class="w3-text-grey">BOMNET directly modifies from INET for environment generation but does not impact normal utilization.</p>
+            <p class="w3-text-grey">BOMNET takes IFC files as input and generates two files for environment configuration: <code>omnet.ini</code> and <code>environment.xml</code>. The former contains the global simulation configuration, while the latter includes all 3D objects from the BIM along with their associated materials. If material information is unavailable in the Digital Twin, BOMNET infers materials based on the BIM structure. </p>
+            <p class="w3-text-grey">BOMNET directly modifies INET architecture and files for environment generation, but does not impact normal utilization.</p>
         </div>
         <div class="w3-half w3-center">
             <img src="website_assets/BOMNET_screenshot.png"  alt="BOMNET screenshot" style="width: -webkit-fill-available;">
@@ -60,14 +61,11 @@
         <div class="w3-third w3-center">
             <img src="website_assets/UnivGustaveEiffel.png" class="univ_logo" alt="Logo of University Gustave Eiffel France">
         </div>
-
         <div class="w3-twothird">
             <h1>Project</h1>
             <h5 class="w3-padding-32">BOMNET is an academic project that we encourage to contribute to improve its versatility.</h5>
-            <p class="w3-text-grey">Supervised by <a href="https://igm.univ-mlv.fr/~rachedi/">Professor Abderrezak Rachedi</a>, PhD canditates <a href="https://aurelienchambon.pythonanywhere.com/">Aurélien Chambon</a> and Clément Dutriez with the help of Master degree students Abderrahmane Melek, Khalifa Serraye, Mohammed Menacer and Louis Thidet, created BOMNET in 2024 as a M2-SSIO project in <b>Université Gustave Eiffel</b>, France.</p>
+            <p class="w3-text-grey">Supervised by <a href="https://igm.univ-mlv.fr/~rachedi/">Professor Abderrezak Rachedi</a>, PhD canditates <a href="https://aurelienchambon.pythonanywhere.com/">Aurélien Chambon</a> and <a href="https://www.linkedin.com/in/cl%C3%A9ment-dutriez/">Clément Dutriez</a> with the help of Master degree students <a href="https://www.linkedin.com/in/melek-abderrahmane/">Abderrahmane Melek</a>, Khalifa Serraye, Mohammed Menacer and <a href="https://louis-thidet.github.io/">Louis Thidet</a>, created BOMNET in 2024 as a M2-SSIO project in <b>Université Gustave Eiffel</b>, France.</p>
             <p class="w3-text-grey">The project is available on GitHub for download, installation and contribution under MIT License.</p>
-            <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Documentation</button>
-
         </div>
     </div>
 </div>
@@ -75,13 +73,15 @@
 <div class="w3-row-padding w3-padding-64 w3-container" id ="down">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Download</h1>
-            <h5 class="w3-padding-32">To install BOMNET into your OMNET++, simply click on the download button below. Select the .java file in the plug-in window of OMNET++.</h5>
-            <p class="w3-text-grey">BOMNET relies on OMNET++ 6, iNet and Python. It requires them all installed with the addition of the Python library <a href="https://github.com/IfcOpenShell/IfcOpenShell">ifcopenshell</a>. </p>
-            <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Download</button>
-
+            <h1>Download and usage</h1>
+            <h5 class="w3-padding-32">To install BOMNET into your OMNET++, download the .zip file, click on "Install New Software" as archive in OMNET++ and select the downloaded file.</h5>
+            <p class="w3-text-grey">BOMNET relies on OMNET++ 6, INET4.5 and Python. It requires them all installed with the addition of the Python library <a href="https://github.com/IfcOpenShell/IfcOpenShell">ifcopenshell</a>, <a href="https://numpy.org/">numpy</a> and <a href="https://pypi.org/project/shapely/">shapely</a> within OMNeT++ environment. Use the following command: </p>
+            <code>cd OMNET_PATH</code><br>
+            <code>source setenv</code><br>
+            <code>pip install numpy ifcopenshell shapely</code><br>
+            <a href="website_assets/BOMNET_plugin.zip"><button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top w3-margin-right">Download</button></a>
+            <a href="website_assets/BOMNET_How_To_Use.pdf"><button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top w3-margin-left">How to use</button></a>
         </div>
-
         <div class="w3-third w3-center">
             <i class="fa fa-download w3-padding-64 w3-text-orange"></i>
         </div>
@@ -95,6 +95,8 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-center w3-opacity" style="font-size: 12px">
+    <a href="BOMNET_Privacy.html"><p>Privacy Policy</p></a>
+    <a href="BOMNET_ToU.html"><p>Terms of Use</p></a>
     <p>BOMNET - LIGM Université Gustave Eiffel 5 Bd Descartes, 77420 Champs-sur-Marne FRANCE</p>
 </footer>
 
